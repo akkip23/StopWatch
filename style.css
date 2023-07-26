@@ -1,0 +1,88 @@
+/* Styling to the body part with gray background */
+body{
+    /* background-image: url('images/img3.jpg'); */
+    background-color: deepskyblue;
+    background-size: cover;
+    font-family: MATH;
+    text-align: center;
+}
+
+/* Container of the stopwatch or content */
+#main{
+    background-color: #23ffd3;
+    /* display: flex; */
+    border-radius: 1000px;
+    color: black;
+    width: 65%;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0px 0px 20px 6px #0e0e0e7a;
+    
+}
+
+
+/* This is the timer div which contains all the
+    timer controller secs, mins, hours */
+#timer{
+    width: 100%;
+    display: flex;
+    /* border: 20px solid black; */
+    /* border-radius: 30px; */
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 45px;
+    margin-bottom: 40px;
+    /* background: white; */
+    box-shadow: 0px 0px 20px 1px #1e1c1c;
+    margin-bottom: 30px;
+    background: linear-gradient(#64e6e4d4, #9198e5);
+}
+
+
+/* This is the divs present within the timer container */
+/* This include divs of hour, mins, and secs */
+#timer>div{
+    display: flex;
+}
+
+/* This refers to the divs containing buttons in it */
+/* buttons like start, stop, reset and theme */
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* common styling to all the buttons */
+.button>button{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(255 236 78);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Hovering effect on button */
+.button>button:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 12px 1px rgb(0, 174, 255);
+}
+
+/* For devices whose width > 450px */
+@media screen and (min-width:450px){
+    #timer{
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* For devices whose width > 700px */
+@media screen and (min-width:700px){
+    #timer{
+        font-size: 105px;
+        /* margin-bottom: 40px; */
+    }
+}
